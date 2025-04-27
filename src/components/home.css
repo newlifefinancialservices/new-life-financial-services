@@ -1,0 +1,17 @@
+/* Banner.css */
+.banner {
+  width: 100%;
+  height: 80vh; /* Default height */
+}
+
+@media (max-width: 768px) {
+  .banner {
+    height: 50vh; /* Height for small screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .banner {
+    height: 50vh; /* Height for extra small screens */
+  }
+}

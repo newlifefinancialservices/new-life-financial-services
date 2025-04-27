@@ -1,3 +1,17 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +49,64 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+h1 {
+  font-size: 2rem;
+  background: radial-gradient(circle, #43cea2, #185a9d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+h2.header {
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: underline;
+  text-decoration-color: #ff7e5f;
+}
+h3 {
+  font-size: 1.2rem;
+}
+h4 {
+  font-size: 1rem;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.navbar {
+  padding: 1rem;
+}
+.navbar a {
+  color: #072730;
+  text-decoration: none;
+  padding: 0.5rem;
+  font-size: large;
+}
+
+p {
+  text-align: justify;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-image {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.slide-in {
+  opacity: 1;
+  transform: translateX(0);
 }
