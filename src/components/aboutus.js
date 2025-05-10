@@ -23,10 +23,38 @@ export default function AboutUs() {
           deliver exceptional value and innovative strategies. We believe in
           creating lasting relationships and helping our clients build a secure
           and prosperous future. Your goals are our priority. Together, let's
-          turn life's financial aspirations into realities. Feel free to let me
-          know if you'd like me to add specific details, such as your company's
-          founding date, mission statement, or key services!
+          turn life's financial aspirations into realities.
         </p>
+      </div>
+
+      {/* Our Team Section */}
+      <div className="mt-5">
+        <h2>Our Team</h2>
+        <div className="row mt-4">
+          {/* Team Member 1 */}
+          <div className="col-md-6 text-center">
+            {/* <p className="text-muted">Financial Advisor</p> */}
+            <img
+              src="../images/nav.jpg" // Replace with the actual path to the image
+              alt="Team Member 1"
+              className="img-fluid rounded-circle mb-3"
+              style={{ width: "200px", height: "200px", objectFit: "cover" }}
+            />
+            <h5>Navpreet Kaur</h5>
+          </div>
+
+          {/* Team Member 2 */}
+          <div className="col-md-6 text-center">
+            {/* <p className="text-muted">Investment Specialist</p> */}
+            <img
+              src="../images/man1.jpg" // Replace with the actual path to the image
+              alt="Team Member 2"
+              className="img-fluid rounded-circle mb-3"
+              style={{ width: "200px", height: "200px", objectFit: "cover" }}
+            />
+            <h5>Manjeet Singh</h5>
+          </div>
+        </div>
       </div>
     </div>
   );

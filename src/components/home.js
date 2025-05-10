@@ -9,6 +9,7 @@ import {
   Work,
   Flight,
   Groups,
+  Blind,
 } from "@mui/icons-material"; // Import MUI icons
 import "./home.css";
 import { Button } from "react-bootstrap";
@@ -91,11 +92,11 @@ export default function HomePage() {
       link: "/TravelInsurance",
     },
     {
-      title: "Visitor Insurance",
+      title: "Disability Insurance",
       description:
-        "At New Life Fainancial Services you get guaranteed Lowest Rate Comparison for the Canadian Visitor Insurance.",
-      icon: <Groups fontSize="large" color="primary" />, // MUI Icon
-      link: "/VisitorInsurance",
+        "Disability Insurance offers you a simple, affordable way to provide an income should a disability prevent you from working.",
+      icon: <Blind fontSize="large" color="primary" />, // MUI Icon
+      link: "/disabilityInsurance",
     },
   ];
 
@@ -170,19 +171,23 @@ export default function HomePage() {
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
-                    height: 100,
+                    height: 150,
                     backgroundColor: "#f5f5f5",
                   }}
                 >
                   {card.icon}
                 </CardMedia>
                 <CardContent sx={{ flexGrow: 1 }}>
-                  <Typography variant="h5" component="div">
+                  {/* <Typography variant="h5" component="div">
                     {card.title}
-                  </Typography>
-                  <Typography variant="body2" color="text.secondary">
+                  </Typography> */}
+                  <div>
+                    <h5>{card.title}</h5>
+                  </div>
+                  {/* <Typography variant="body2" color="text.secondary">
                     {card.description}
-                  </Typography>
+                  </Typography> */}
+                  <div className="text-secondary">{card.description}</div>
                 </CardContent>
                 <div className="d-flex justify-content-center mb-3">
                   <Link className="btn btn-primary hover" to={card.link}>

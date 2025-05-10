@@ -4,6 +4,7 @@ import { LocationOn, Call, Email } from "@mui/icons-material";
 import { Input } from "@mui/material";
 import "bootstrap/dist/css/bootstrap.css";
 import emailjs from "@emailjs/browser";
+import PrivacyPolicy from "./PrivacyPolicy"; // Import the PrivacyPolicy component
 
 export default function ContactUs() {
   const [validated, setValidated] = useState(false);
@@ -47,11 +48,11 @@ export default function ContactUs() {
         style={{ width: "100%", height: "700px" }}
       />
       <h1>Contact Us</h1>
-      <div className="row align-items-center mt-4 p-4 rounded">
+      <div className="row align-items-center mt-2 p-2 rounded">
         <Container>
           <div className="container py-5">
             <div className="row g-5">
-              <div className="col-xl-6">
+              <div className="col-xl-7">
                 <div className="row row-cols-md-2 g-4">
                   <div
                     className="aos-item"
@@ -59,9 +60,10 @@ export default function ContactUs() {
                     data-aos-delay="200"
                   >
                     <div className="aos-item__inner">
-                      <div className="bg-light hvr-shutter-out-horizontal d-block p-3">
+                      <div className="bg-light hvr-shutter-out-horizontal d-block p-3 rounded">
                         <div className="d-flex justify-content-start">
-                          <i className="fa-solid fa-envelope h3 pe-2"></i>
+                          <Email fontSize="medium" className="me-3" />
+
                           <span className="h5">Email</span>
                         </div>
                         <span>admin@newlifefinancialservices.ca</span>
@@ -74,12 +76,12 @@ export default function ContactUs() {
                     data-aos-delay="400"
                   >
                     <div className="aos-item__inner">
-                      <div className="bg-light hvr-shutter-out-horizontal d-block p-3">
+                      <div className="bg-light hvr-shutter-out-horizontal d-block p-3 rounded">
                         <div className="d-flex justify-content-start">
-                          <i className="fa-solid fa-phone h3 pe-2"></i>
+                          <Call fontSize="medium" className="me-3" />
                           <span className="h5">Phone</span>
                         </div>
-                        <span>+1-780-263-1366 , 780-522-8181</span>
+                        <span>+1-780-245-0500 , 780-522-8181</span>
                       </div>
                     </div>
                   </div>
@@ -90,9 +92,9 @@ export default function ContactUs() {
                   data-aos-delay="600"
                 >
                   <div className="aos-item__inner">
-                    <div className="bg-light hvr-shutter-out-horizontal d-block p-3">
+                    <div className="bg-light hvr-shutter-out-horizontal d-block p-3 rounded">
                       <div className="d-flex justify-content-start">
-                        <i className="fa-solid fa-location-pin h3 pe-2"></i>
+                        <LocationOn fontSize="medium" className="me-3" />
                         <span className="h5">Office location</span>
                       </div>
                       <span># 9868A 33AVE NW, EDMONTON, AB T6N 1C6</span>
@@ -106,7 +108,7 @@ export default function ContactUs() {
                 >
                   <div className="mt-4 w-100 aos-item__inner">
                     <iframe
-                      className="hvr-shadow"
+                      className="hvr-shadow rounded"
                       width="100%"
                       height="345"
                       frameBorder="0"
@@ -123,7 +125,7 @@ export default function ContactUs() {
                 </div>
               </div>
 
-              <div className="col-xl-6">
+              <div className="col-xl-5">
                 <h2 className="pb-4">Leave a message</h2>
 
                 <Row className="justify-content-md-center">
@@ -245,20 +247,14 @@ export default function ContactUs() {
         show={showPrivacyPolicy}
         onHide={() => setShowPrivacyPolicy(false)}
         centered
+        scrollable
+        size="lg"
       >
         <Modal.Header closeButton>
           <Modal.Title>Privacy Policy</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <p>
-            Your privacy is important to us. This Privacy Policy explains how we
-            collect, use, and protect your personal information.
-          </p>
-          <p>
-            By using our services, you agree to the collection and use of
-            information in accordance with this policy.
-          </p>
-          {/* Add more privacy policy details here */}
+          <PrivacyPolicy />
         </Modal.Body>
         <Modal.Footer>
           <Button

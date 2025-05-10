@@ -65,6 +65,12 @@ export default function Footer() {
           >
             Critical Illness Insurance
           </Link>
+          <Link
+            className="d-flex text-white text-decoration-none"
+            to="/disabilityInsurance"
+          >
+            Disability Insurance
+          </Link>
           <h6 className="mt-5 text-warning">Investement:</h6>
           <hr />
           <Link className="d-flex text-white text-decoration-none" to="/rrsp">

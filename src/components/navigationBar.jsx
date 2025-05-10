@@ -32,10 +32,7 @@ export function NavigationBar() {
           style={{ backgroundColor: " #e3f2fd" }}
         >
           <Row className="d-flex justify-content-between align-items-center w-100">
-            <Col
-              className="ms-5 ps-5 d-flex align-items-center justify-content-center"
-              xs="auto"
-            >
+            <Col className="ms-md-5 ps-md-5" xs="auto">
               <Navbar.Brand href="/">
                 <img
                   src="../images/logo.png" // Replace with the actual path to your logo
@@ -56,7 +53,7 @@ export function NavigationBar() {
                       Call Us
                       <ArrowForward fontSize="inherit" color="primary" />
                     </strong>
-                    +1-780-263-1366 / 780-522-8181
+                    +1-780-245-0500 / 780-522-8181
                   </Navbar.Text>
                   <Navbar.Text>
                     <strong>
@@ -97,11 +94,14 @@ export function NavigationBar() {
                           <NavDropdown.Item href="/MortgageInsurance">
                             Mortgage Insurance
                           </NavDropdown.Item>
-                          <NavDropdown.Item href="/travelInsurance">
+                          <NavDropdown.Item href="/TravelInsurance">
                             Travel Insurance
                           </NavDropdown.Item>
-                          <NavDropdown.Item href="/criticalIllnessInsurance">
+                          <NavDropdown.Item href="/CriticalIllnessInsurance">
                             Critical Illness Insurance
+                          </NavDropdown.Item>
+                          <NavDropdown.Item href="/DisabilityInsurance">
+                            Disability Insurance
                           </NavDropdown.Item>
                         </NavDropdown>
                         <Nav.Link as={Link} to={"/rrsp"}>

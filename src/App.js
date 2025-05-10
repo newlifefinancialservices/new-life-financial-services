@@ -21,6 +21,7 @@ import MortgageInsurance from "./components/mortgage-insurance";
 import React, { useLayoutEffect } from "react";
 import RRSP from "./components/rrsp";
 import RESP from "./components/resp";
+import DisabilityInsurance from "./components/disability-insurance";
 
 const Wrapper = ({ children }) => {
   const location = useLocation();
@@ -68,6 +69,11 @@ function App() {
                 exact
                 path="/mortgageinsurance"
                 element={<MortgageInsurance />}
+              />
+              <Route
+                exact
+                path="/disabilityinsurance"
+                element={<DisabilityInsurance />}
               />
               <Route exact path="/rrsp" element={<RRSP />} />
               <Route exact path="/resp" element={<RESP />} />

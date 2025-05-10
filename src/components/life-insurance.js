@@ -18,7 +18,7 @@ export default function LifeInsurance() {
           </p>
           <h4>Term Insurance</h4>
           <p>
-            "Flexible life insurance for your evolving needs. No matter where
+            Flexible life insurance for your evolving needs. No matter where
             life takes you, New Life Financial services is here to create a
             personalized solution that grows and adapts with you." Find the
             right coverage for your life stage Pick the term that fits your
