@@ -22,6 +22,7 @@ import React, { useLayoutEffect } from "react";
 import RRSP from "./components/rrsp";
 import RESP from "./components/resp";
 import DisabilityInsurance from "./components/disability-insurance";
+import PrivacyPolicy from "./components/PrivacyPolicy";
 
 const Wrapper = ({ children }) => {
   const location = useLocation();
@@ -77,6 +78,7 @@ function App() {
               />
               <Route exact path="/rrsp" element={<RRSP />} />
               <Route exact path="/resp" element={<RESP />} />
+              <Route exact path="/privacypolicy" element={<PrivacyPolicy />} />
             </Routes>
           </div>
           <Footer />

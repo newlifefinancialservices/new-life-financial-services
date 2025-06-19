@@ -215,16 +215,34 @@ export default function ContactUs() {
                           required
                           label={
                             <>
-                              By checking this box, I confirm that I have read
-                              and agree to the{" "}
-                              <span
-                                className="text-primary"
-                                style={{ cursor: "pointer" }}
-                                onClick={() => setShowPrivacyPolicy(true)}
-                              >
-                                Privacy Policy
-                              </span>
-                              .
+                              By checking this box, I consent to receive
+                              transactional messages related to my account,
+                              orders, or services I have requested. These
+                              messages may include appointments, confirmations,
+                              updates, and other important information. I
+                              understand that I can withdraw my consent at any
+                              time by contacting New Life Financial Services at
+                              reminders, order confirmations, and account
+                              notifications amond others. Message frequency may
+                              vary may vary. Message & data rate may apply.
+                              Reply HELP for help or STOP to opt-outs.
+                            </>
+                          }
+                        />
+                      </Form.Group>
+                      <Form.Group controlId="formCheckbox" className="mt-2">
+                        <Form.Check
+                          type="checkbox"
+                          name="policy"
+                          required
+                          label={
+                            <>
+                              By checking this box, I consent to receive
+                              marketing and promotional messages, including
+                              special offers, discounts, new product updates
+                              among others. Message frequency may vary may vary.
+                              Message & data rate may apply. Reply HELP for help
+                              or STOP to opt-outs.
                             </>
                           }
                         />
@@ -233,6 +251,14 @@ export default function ContactUs() {
                       <Button variant="primary" type="submit" className="mt-3">
                         Submit
                       </Button>
+                      <hr></hr>
+                      <span
+                        className="text-primary"
+                        style={{ cursor: "pointer" }}
+                        onClick={() => setShowPrivacyPolicy(true)}
+                      >
+                        Privacy Policy
+                      </span>
                     </Form>
                   </Col>
                 </Row>
